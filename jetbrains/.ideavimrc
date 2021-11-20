@@ -1,0 +1,23 @@
+set relativenumber
+set number
+let mapleader = " "
+
+" go next tab
+nmap <leader>l :action NextTab<cr>
+" go Previous tab
+nmap <leader>h :action PreviousTab<cr>
+
+" Won't work in visual mode (with vmap) for some reason.
+" Use default map of <c-/> for that.
+nmap <leader>zz :action CommentByLineComment<cr>
+
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gs :action GotoSuperMethod<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap gb :action JumpToLastChange<CR>
+
+nnoremap U :action FindUsages<CR>
+nnoremap R :action RenameElement<CR>
+
+nnoremap <leader>t :action ActivateTerminalToolWindow<CR>
+nnoremap <leader>p :action ActivatePythonConsoleToolWindow<CR>
