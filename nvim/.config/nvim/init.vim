@@ -6,7 +6,7 @@ source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/functions.vim
 source ~/.config/nvim/default-settings.vim
 source ~/.config/nvim/key-maps.vim
-source ~/.config/nvim/lsp.vim
+source ~/.config/nvim/lua-scripts.vim
 
 autocmd BufWritePre * :call TrimWhitespace()
 autocmd FileType typescript,yaml,json,html :call TsIndent()

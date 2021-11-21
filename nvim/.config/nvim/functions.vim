@@ -23,3 +23,10 @@ fun! TrimWhitespace()
     keeppatterns %s/\s\+$//e
     call winrestview(l:save)
 endfun
+
+fun! OpenTerminal()
+    NvimTreeClose
+    split
+    terminal
+    NvimTreeOpen
+endfun

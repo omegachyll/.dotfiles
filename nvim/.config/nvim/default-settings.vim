@@ -4,6 +4,9 @@ set noerrorbells
 " set tabs and auto indent to 4 spaces
 set tabstop=4 softtabstop=4
 set shiftwidth=4
+
+set splitbelow
+
 " convert tabs to spaces
 set expandtab
 

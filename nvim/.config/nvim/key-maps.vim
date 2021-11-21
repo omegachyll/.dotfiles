@@ -41,3 +41,5 @@ nnoremap <silent> K :call <SID>show_documentation()<CR>
 
 " Map esc to exit terminal mode
 :tnoremap <Esc> <C-\><C-n>
+
+nnoremap <leader>t :call OpenTerminal()<CR>
