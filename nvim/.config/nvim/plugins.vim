@@ -3,8 +3,10 @@ call plug#begin(plugged_path)
 " color theme
 Plug 'morhetz/gruvbox'
 
-"coc
-Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
+Plug 'neovim/nvim-lspconfig'
+
+Plug 'kyazdani42/nvim-web-devicons' " for file icons
+Plug 'kyazdani42/nvim-tree.lua'
 
 Plug 'itchyny/lightline.vim'
 
