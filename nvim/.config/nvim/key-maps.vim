@@ -12,8 +12,8 @@ nnoremap <leader>b :bp<CR>
 nnoremap <leader>c :bw<CR>
 
 " pane resize
-nnoremap <silent> <Leader>+ :vertical resize +5<CR>
-nnoremap <silent> <Leader>- :vertical resize -5<CR>
+nnoremap <C-k> :resize +5<CR>
+nnoremap <C-j> :resize -5<CR>
 
 " Tab scroll
 inoremap <silent><expr> <Tab>
