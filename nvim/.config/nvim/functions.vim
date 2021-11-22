@@ -27,6 +27,6 @@ endfun
 fun! OpenTerminal()
     NvimTreeClose
     split
-    terminal
+    te zsh
     NvimTreeOpen
 endfun

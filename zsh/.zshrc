@@ -11,3 +11,6 @@ fi
 if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
+
+alias pyvenv='source venv/bin/activate'
+alias zshedit='nvim ~/.zshrc'
