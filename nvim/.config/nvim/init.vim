@@ -11,4 +11,5 @@ source ~/.config/nvim/lua-scripts.vim
 autocmd BufWritePre * :call TrimWhitespace()
 autocmd FileType typescript,yaml,json,html :call TsIndent()
 autocmd FileType python,cpp,cxx,h,hpp,c :call PyIndent()
+autocmd VimLeavePre * call CleanupStuff()
 

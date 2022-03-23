@@ -12,6 +12,17 @@ if [[ -e /usr/share/zsh/manjaro-zsh-prompt ]]; then
   source /usr/share/zsh/manjaro-zsh-prompt
 fi
 
+open_project() {
+    if [ -e .project ]; then
+        source .project
+        source $venv/bin/activate
+        nvim $*;
+        deactivate;
+    else
+        nvim $*;
+    fi;
+}
+
 source "$HOME/.config/zsh/zsh-vim-mode/zsh-vim-mode.plugin.zsh"
 
 # mcfly (ctlr + r)
@@ -24,3 +35,4 @@ alias wgu='sudo wg-quick up wg0'
 alias wguf='sudo wg-quick up wg1'
 alias wgd='sudo wg-quick down wg0'
 alias wgdf='sudo wg-quick down wg1'
+alias open='open_project'

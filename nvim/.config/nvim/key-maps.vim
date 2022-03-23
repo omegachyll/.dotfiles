@@ -43,3 +43,11 @@ nnoremap <silent> K :call <SID>show_documentation()<CR>
 :tnoremap <Esc> <C-\><C-n>
 
 nnoremap <leader>t :call OpenTerminal()<CR>
+
+" Folder tree toggle
+nnoremap <C-n> :NvimTreeToggle<CR>
+
+" spell check toggle
+nnoremap <silent> <F10> :set spell!<cr>
+inoremap <silent> <F10> <C-O>:set spell!<cr>
+
